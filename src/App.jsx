@@ -10,14 +10,14 @@ function App() {
       <animated.div
         className="grid w-screen h-screen place-content-center"
         style={useSpring({
-          background: on ? "red" : "#0088FF",
+          background: on ? "white" : "black",
         })}
       >
         <animated.div
           className="z-10 text-center text-3xl font-bold rounded-lg hover:shadow-2xl shadow:lg transition-shadow duration-200"
           style={useSpring({
-            background: on ? "white" : "black",
-            color: on ? "black" : "white",
+            color: on ? "white" : "black",
+            background: on ? "black" : "white",
             transform: on ? "translate3d(40%,0,0)" : "translate3d(-40%,0,0)",
           })}
           onClick={() => {
